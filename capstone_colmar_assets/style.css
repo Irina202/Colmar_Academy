@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight:lighter;
+    color: rgb(88, 88, 88);
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: black;
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: black;
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+}
+b {
+    font-weight: bold;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+.header__logo {
+    display: flex;
+    justify-content: left;
+}
+.header__logo-link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+}
+.header__logo-text {
+    display: inline-block; 
+    vertical-align: middle;
+    line-height: 32px;
+}
+.header__list, .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.nav-item {
+    margin-right: 16px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+.start__here {
+    background-color: rgb(216, 211, 211);
+}
+.start__here-wrapper, .thesis__wrapper {
+    display: flex;
+}
+.start__here-image {
+    width: 60%;
+    height: auto;
+    margin-right: 24px;
+    padding: 32px 0;
+}
+.banner {
+    width: 100%;
+}
+.start__here-text-wrapper {
+    width: 40%;
+    align-self: center;
+}
+.start__here-text {
+    width: 80%;
+}
+.start__here-button {
+    width: 100%;
+    padding: 8px 0;
+    background-color: black;
+    color: white;
+    margin-top: 24px;
+}
+.on__campus {
+    padding: 32px 0;
+    display: flex;
+}
+.info__main {
+    margin-right: 24px;
+    width: 60%;
+    height: auto;
+}
+.info__list {
+    width: 40%;
+    height: auto;
+}
+.info__main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+}
+.info__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.info__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    align-items: center;
+}
+.info-item:hover {
+    background-color: rgb(165, 161, 161);
+    cursor: pointer;
+}
+.read__more {
+    margin-top: 8px;
+    color: rgb(65, 91, 238);
+}
+.info__item-image {
+    width: 35%;
+    
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.info__list-caption {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+.learning__wrapper {
+    background-color: rgb(216, 211, 211);
+    display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+}
+.learning__header {
+    display: block;
+    margin: 32px auto;
+    text-align: center;
+}
+.learning__grid {
+    display: grid;
+    
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 24px 32px;
+    margin: 0 0 32px 0;
+    padding: 0 72px;
+    width: auto;
+}
+.image {
+    max-width: 100%;
+}
+.learning__item {
+background-color: white;
+}
+
+.learning__text {
+    padding: 16px;
+}
+.learning__courses {
+    margin-top: 8px;
+}
+.thesis__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+}
+.footer__wrapper {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.thesis {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 32px;
+}
+.thesis__video {
+    width: 60%;
+}
+.video {
+    width: 100%;
+    margin-bottom: 24px;
+}
